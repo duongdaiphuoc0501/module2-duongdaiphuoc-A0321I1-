@@ -56,4 +56,3 @@ public class MyLinkedList<E> {
         return temp.data;
     }
 }
-//
