@@ -2,13 +2,13 @@ package java_collection_framework.bai_tap;
 
 public class Product {
     private int id;
-    private int nameProduct;
+    private String nameProduct;
     private int price;
 
     public Product() {
     }
 
-    public Product(int id, int nameProduct, int price) {
+    public Product(int id, String nameProduct, int price) {
         this.id = id;
         this.nameProduct = nameProduct;
         this.price = price;
@@ -22,11 +22,11 @@ public class Product {
         this.id = id;
     }
 
-    public int getNameProduct() {
+    public String getNameProduct() {
         return this.nameProduct;
     }
 
-    public void setNameProduct(int nameProduct) {
+    public void setNameProduct(String nameProduct) {
         this.nameProduct = nameProduct;
     }
 
@@ -36,5 +36,14 @@ public class Product {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", nameProduct='" + nameProduct + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
